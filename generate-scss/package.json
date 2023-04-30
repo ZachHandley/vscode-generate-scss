@@ -2,7 +2,11 @@
   "name": "generate-scss",
   "displayName": "generate-scss",
   "description": "Takes a given class and generates the nested SCSS selectors in BEM format, then appends them to the selected file",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "CRTVDigital",
+  "repository": {
+    "url": "https://github.com/ZachHandley/vscode-generate-scss"
+  },
   "engines": {
     "vscode": "^1.77.0"
   },
@@ -10,6 +14,9 @@
     "Other"
   ],
   "main": "./dist/extension.js",
+  "activationEvents": [
+    "onCommand:extension.generate-scss"
+  ],
   "contributes": {
     "commands": [
       {
